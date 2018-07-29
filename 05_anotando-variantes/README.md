@@ -6,3 +6,6 @@
 $ conda install -c bioconda snpeff
 ```
 
+## Fazer download das anotações referentes ao genoma hg19
+
+## Rodar o SnpEff

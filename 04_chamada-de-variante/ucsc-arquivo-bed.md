@@ -6,8 +6,11 @@
 1. Faça as seguintes mudanças:
 
 > **assembly:** Feb. 2009 (GRCh37/hg19)
+
 > **track:** UCSC Genes
+
 > **table:** knownCanonical
+
 > **output format:** BED - browser extensible data
 
 ![table-browser-ucsc](img/01_table-browser-ucsc.png)
@@ -17,6 +20,7 @@
 ![paste-genes](img/02_paste-genes.png)
 
 > BRCA1
+
 > BRCA2
 
 3. Clique em `get output`;

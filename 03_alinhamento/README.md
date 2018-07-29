@@ -50,5 +50,3 @@ $ samtools view 510-7-BRCA_S8.bam chr17:41197694-41197819 | wc -l
 ```
 $ samtools view  510-7-BRCA_S8.bam | cut -f6 | grep '*' | wc -l
 ```
-
-*

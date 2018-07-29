@@ -7,9 +7,10 @@ $ conda install -c bioconda fastqc
 
 ## Rodar FASTQC nos exemplos
 
-* Entre na pasta `/02_fastq-quality/FASTQC` e rode o comando abaixo
+* Entre na pasta `/02_fastq-quality/FASTQC` crie os diretórios e rode o comando abaixo
 
 ```
+$ mkdir FASTQC cutadapt
 $ fastqc ../../00_dados/510-7-BRCA_S8_L001_R1_001.fastq.gz --nogroup -o ./
 $ fastqc ../../00_dados/510-7-BRCA_S8_L001_R2_001.fastq.gz --nogroup -o ./
 ```

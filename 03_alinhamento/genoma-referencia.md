@@ -36,6 +36,7 @@ $ grep -v '>' ucsc-chr13-chr17.hg19.fa | wc -l
 
 * [Question: Where Can I Download Human Reference Genome In Fasta Format? Hgref.Fa File](https://www.biostars.org/p/1796/)
 * [Download Human Reference Genome (HG19 - GRCh37)](https://www.gungorbudak.com/blog/2014/04/13/download-human-reference-genome-hg19/)
-* To use GATK toolkit you have to prepare your genome reference:
-	* [How can I prepare a FASTA file to use as reference?](https://gatkforums.broadinstitute.org/gatk/discussion/1601/how-can-i-prepare-a-fasta-file-to-use-as-reference)
-	* [Prepare a reference for use with BWA and GATK](https://gatkforums.broadinstitute.org/gatk/discussion/2798/howto-prepare-a-reference-for-use-with-bwa-and-gatk)
+* Para usar o kit de ferramentas GATK, você precisa preparar o genoma de referência:
+> [How can I prepare a FASTA file to use as reference?](https://gatkforums.broadinstitute.org/gatk/discussion/1601/how-can-i-prepare-a-fasta-file-to-use-as-reference)
+
+> [Prepare a reference for use with BWA and GATK](https://gatkforums.broadinstitute.org/gatk/discussion/2798/howto-prepare-a-reference-for-use-with-bwa-and-gatk)
