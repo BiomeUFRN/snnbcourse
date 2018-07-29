@@ -11,12 +11,12 @@ $ conda install -c bioconda freebayes
 ## Chamar variante usando o BAM resultante do tutorial da pasta `03_alinhamento`
 
 ```
-$ freebayes -f ../03_alinhamento/genome/ucsc-chr13-chr17.hg19.fa --targets BRCA.bed  ../03_alinhamento/510-7-BRCA_S8.bam > 510-7-BRCA_S8.vcf
+$ freebayes -f ../03_alinhamento/genome/ucsc-chr13-chr17.hg19.fa --targets BRCA.bed  ../03_alinhamento/SAM-BAM/510-7-BRCA_S8.bam > 510-7-BRCA_S8.vcf
 ```
 
 ## A partir daqui é possível filtrar as variantes e em seguida anotar informações para sua interpretação.
 
-## *Opicional* - Vamos usar Vcftools para filtrar variantes com qualidade (phred-score) abaixo de 20
+## *Opcional* - Vamos usar Vcftools para filtrar variantes com qualidade (phred-score) abaixo de 20
 
 ```
 $ conda install -c bioconda vcftools

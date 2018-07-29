@@ -5,17 +5,16 @@
 ## Para fazer download do genoma inteiro (incluindo seus contigs extras):
 
 ```
-$ mkdir genome && cd genome
+$ cd genome
 $ wget --timestamping 'ftp://hgdownload.cse.ucsc.edu/goldenPath/hg19/chromosomes/*'
 $ ls chr* | xargs cat > ucsc.hg19.fa 
 ```
 
-## Para esse tutorial só precisamos de chr13 e chr17, para facilitar é possível baixá-los separadamente e criar um arquivo com eles:
+## Para esse tutorial só precisamos de chr13 e chr17, para facilitar é possível criar um novo arquivo com eles:
 
 ```
-$ mkdir genome && cd genome
-$ wget --timestamping 'ftp://hgdownload.cse.ucsc.edu/goldenPath/hg19/chromosomes/chr13.fa.gz' -O chr13.fa.gz && wget --timestamping 'ftp://hgdownload.cse.ucsc.edu/goldenPath/hg19/chromosomes/chr17.fa.gz' -O chr17.fa.gz
-$ for i in $(ls *gz); do gunzip -c $i; done
+$ cd genome
+$ for fasta in $(ls *.gz); do gunzip ${fasta}; done
 $ ls chr* | xargs cat > ucsc-chr13-chr17.hg19.fa
 ```
 
@@ -31,6 +30,7 @@ $ samtools faidx ucsc-chr13-chr17.hg19.fa
 ```
 $ grep '>' ucsc-chr13-chr17.hg19.fa
 $ grep -v '>' ucsc-chr13-chr17.hg19.fa | wc -l
+```
 
 ## Links interessantes:
 
