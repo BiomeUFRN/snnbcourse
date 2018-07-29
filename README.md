@@ -25,6 +25,9 @@ $ sudo apt-get install git-all
 $ git clone https://github.com/genomika/snnbcourse.git 
 ``` 
 
+## Como instalar conda
+* [Link ensinando como instalar](https://conda.io/docs/user-guide/install/index.html)
+
 ## Como rodar o container Docker
 
 ## Outros cursos aqui no github, a maioria em inglês

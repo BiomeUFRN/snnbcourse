@@ -2,10 +2,11 @@
 
 * Olhar o [manual](http://snpeff.sourceforge.net/SnpEff_manual.html#cmdline);
 
-## Fazer a instalação do SnpEff
+## Fazer a instalação do SnpEff, além dele também é necessário ter o java jvm instalado.
 
 ```
 $ conda install -c bioconda snpeff
+$ conda install -c cyclus java-jdk
 ```
 
 ## Fazer download das anotações referentes ao genoma GRCh37
@@ -25,10 +26,12 @@ $ snpEff databases | grep GRCh37
 ## Rodar o SnpEff
 
 ```
-$ snpEff -spliceSiteSize 10 GRCh37.75 ../04_chamada-de-variante/510-7-BRCA_S8.vcf > 510-7-BRCA_S8.anno.vcf
+$ snpEff -Xmx4G -spliceSiteSize 10 -v GRCh37.75 ../04_chamada-de-variante/510-7-BRCA_S8.vcf > 510-7-BRCA_S8.anno.vcf
 ```
 
 > O parâmetro `-spliceSiteSize 10` identifica as regiões +10 e -10 como sendo regiões de splicing.
+
+> Ficar de olho na memória requerida, isso pode acarretar erro ao rodar e não ter memória suficiente para que funcione.
 
 ## Opicional - Para anotar outros bancos de dados é preciso usar o SnpSift
 
