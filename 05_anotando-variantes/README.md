@@ -2,7 +2,7 @@
 
 * Olhar o [manual](http://snpeff.sourceforge.net/SnpEff_manual.html#cmdline);
 
-## Fazer a instalação do SnpEff, além dele também é necessário ter o java jvm instalado.
+## Fazer a instalação do SnpEff, além dele também é necessário ter o java jdk instalado.
 
 ```
 $ conda install -c bioconda snpeff
