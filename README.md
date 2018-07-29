@@ -30,6 +30,28 @@ $ git clone https://github.com/genomika/snnbcourse.git
 
 ## Como rodar o container Docker
 
+Faça a instalação do Docker de acordo com o seu sistema operacional:
+
+* [Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows)
+* [Ubuntu](https://store.docker.com/editions/community/docker-ce-server-ubuntu)
+* [Mac](https://store.docker.com/editions/community/docker-ce-desktop-mac)
+
+As instalações de outros sistemas operacionais podem ser encontradas [aqui](https://www.docker.com/community-edition).
+
+Após a instalação, faça download da imagem do curso.
+
+```
+$ docker pull wildergalvao/gnmk-snnb
+```
+
+Vá para o diretório do repositório do curso, e depois crie um container com a imagem baixada, utilizando o seguinte comando:
+
+```
+$ docker container run --rm -it -v $(pwd):/curso-genomika-snnb/snnbcourse wildergalvao/gnmk-snnb
+```
+
+No final, será criado um container com todos os softwares necessários para a execução prática do curso já instalados.
+
 ## Outros cursos aqui no github, a maioria em inglês
 
 * [In-depth NGS Data Analysis Course](https://github.com/hbctraining/In-depth-NGS-Data-Analysis-Course)
