@@ -33,7 +33,7 @@ $ snpEff -Xmx4G -spliceSiteSize 10 -v GRCh37.75 ../04_chamada-de-variante/510-7-
 
 > Ficar de olho na memória requerida, isso pode acarretar erro ao rodar e não ter memória suficiente para que funcione.
 
-## Opicional - Para anotar outros bancos de dados é preciso usar o SnpSift
+## Opcional - Para anotar outros bancos de dados é preciso usar o SnpSift
 
 ```
 $ conda install -c bioconda snpsift
