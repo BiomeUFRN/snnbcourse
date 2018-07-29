@@ -8,5 +8,35 @@
 
 * [Link para os slides](https://docs.google.com/presentation/d/1phNV2TlAfsjnXjuIhgQECl7-0eciM_wOLi-l-Qfx1a0/edit#slide=id.g3a46271903_0_313)
 
+## Como instalar o git
+
+```
+$ sudo apt-get install git-all
+```
+
+> Para mais informações e outros sistemas operacionais, [clique aqui](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git)
+
+## Como clonar esse repositório
+
+1. Vá para uma pasta onde queira deixar este repositório;
+2. Use o comando abaixo:
+
+```
+$ git clone https://github.com/genomika/snnbcourse.git 
+``` 
+
+## Como rodar o container Docker
+
+## Outros cursos aqui no github, a maioria em inglês
+
+* [In-depth NGS Data Analysis Course](https://github.com/hbctraining/In-depth-NGS-Data-Analysis-Course)
+* [Applied Computational Genomics Course at UU: Spring 2018](https://github.com/quinlan-lab/applied-computational-genomics)
+* [JHU EN.601.749: Computational Genomics: Applied Comparative Genomics](https://github.com/schatzlab/appliedgenomics2018)
+* [NGS course by @imedina](https://github.com/ngs-course/ngs-course.github.io) - http://www.ngscourse.org/
+* [Computational Genomics by Ben Lang](https://github.com/BenLangmead/comp-genomics-class)
+* [Wrangling Genomics](https://github.com/datacarpentry/wrangling-genomics) - https://datacarpentry.org/wrangling-genomics/
+* [I Workshop de Verão de Bioinformática pela Genomika](https://github.com/genomika/summercourse)
+* [Introduction to second generation NGS data analysis](https://github.com/geocarvalho/ngs-studies/tree/master/biome-ngs)
 
 
+![Aqui sim!](https://media1.tenor.com/images/5a4fb253901d1d9612189b39a2898e13/tenor.gif?itemid=10891941)
