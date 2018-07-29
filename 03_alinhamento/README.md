@@ -12,8 +12,7 @@ $ conda install -c bioconda bwa samtools -y
 
 ```
 $ mkdir SAM-BAM && cd SAM-BAM
-$ bwa mem -t 2 -R "@RG\tID:510-7\tSM:510-7\tPL:Illumina\tPU:unit1\tLB:lib1" ../genome/ucsc-chr13-chr17.hg19.fa ../../00_dados/510-7-BRCA_S8_L001_R1_001.fastq.gz ../../00_dados/510-7-BRCA_S8_L001_R2_001.fastq.gz > 510-7-BRCA_S8.sam
-```
+$ bwa mem -t 2 -R "@RG\tID:510-7\tSM:510-7\tPL:Illumina\tPU:unit1\tLB:lib1" ../../03_alinhamento/genome/ucsc-chr13-chr17.hg19.fa ../../00_dados/510-7-BRCA_S8_L001_R1_001.fastq.gz ../../00_dados/510-7-BRCA_S8_L001_R2_001.fastq.gz > 510-7-BRCA_S8.sam`
 
 > Existem vários alinhadores, para diferentes propósitos. Se quiser saber mais sobre eles [clique aqui](https://en.wikibooks.org/wiki/Next_Generation_Sequencing_(NGS)/Alignment)
 
@@ -27,7 +26,7 @@ $ samtools index 510-7-BRCA_S8.bam
 ## Alinhando com um único comando sem criar arquivo SAM e passando os resultados diretamente para o arquivo BAM;
 
 ```
-$ bwa mem -t 2 -R "@RG\tID:510-7\tSM:510-7\tPL:Illumina\tPU:unit1\tLB:lib1" ../genome/ucsc-chr13-chr17.hg19.fa ../../00_dados/510-7-BRCA_S8_L001_R1_001.fastq.gz ../../00_dados/510-7-BRCA_S8_L001_R2_001.fastq.gz | samtools sort > 510-7-BRCA_S8.bam && samtools index 510-7-BRCA_S8.bam
+$ bwa mem -t 2 -R "@RG\tID:510-7\tSM:510-7\tPL:Illumina\tPU:unit1\tLB:lib1" ../../03_alinhamento/genome/ucsc-chr13-chr17.hg19.fa ../../00_dados/510-7-BRCA_S8_L001_R1_001.fastq.gz ../../00_dados/510-7-BRCA_S8_L001_R2_001.fastq.gz | samtools sort > 510-7-BRCA_S8.bam && samtools index 510-7-BRCA_S8.bam
 ```
 
 ## Instalar o IGV para visualizar o BAM, abra o programa e selecione os arquivos (BAM, BED, VCF) que irá analisar
